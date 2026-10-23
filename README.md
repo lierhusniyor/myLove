@@ -29,10 +29,24 @@ TAVILY_API_KEY=...
 ```
 
 ### 3. Run
-```
+
+**Option A: Railway.app (easiest for phone)**
+1. Push code to GitHub
+2. railway.app -> New Project -> Deploy from GitHub
+3. Select this repo
+4. Add environment variables (same as .env)
+5. Deploy
+
+**Option B: Render.com**
+1. render.com -> New -> Background Worker
+2. Connect GitHub repo
+3. Build command: `pip install -r requirements.txt`
+4. Start command: `python bot.py`
+5. Add environment variables
+6. Deploy
+
+**Option C: Local**
+```bash
 pip install -r requirements.txt
 python bot.py
 ```
-
-### 4. Deploy
-Railway.app yoki Render.com (worker, `Procfile` bor).
